@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio | Linuel Leogan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h2>MyPortfolio</h2>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#recommendations">Recommendations</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="home" id="home">
+  <div class="home-text">
+    <h1>Hi, I'm Linuel 👋</h1>
+    <p>Web Developer | Programmer | IT Student</p>
+  </div>
+  <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=500&auto=format&fit=crop">
+</section>
+
+<section class="about" id="about">
+  <h2>About Me</h2>
+  <div class="about-container">
+    <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=500&auto=format&fit=crop">
+    <p>I am an aspiring web developer skilled in HTML, CSS, JavaScript, PHP, Laravel, and Django. I love building responsive, efficient, and scalable systems.</p>
+  </div>
+</section>
+
+<section class="skills" id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card"><img src="https://cdn-icons-png.flaticon.com/512/732/732212.png">HTML5</div>
+    <div class="skill-card"><img src="https://cdn-icons-png.flaticon.com/512/732/732190.png">CSS3</div>
+    <div class="skill-card"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png">JavaScript</div>
+    <div class="skill-card"><img src="https://cdn-icons-png.flaticon.com/512/919/919830.png">PHP</div>
+    <div class="skill-card"><img src="https://cdn-icons-png.flaticon.com/512/919/919831.png">Laravel</div>
+    <div class="skill-card"><img src="https://cdn-icons-png.flaticon.com/512/919/919852.png">Django</div>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80">
+      <div class="project-content">
+        <h3>Barangay Information System</h3>
+        <p>Complete CRUD management system.</p>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80">
+      <div class="project-content">
+        <h3>Water Refilling Station System</h3>
+        <p>Order, inventory, and delivery management.</p>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80">
+      <div class="project-content">
+        <h3>Catering Inventory System</h3>
+        <p>Stock tracking and reports.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="recommendations" id="recommendations">
+  <h2>Recommendations</h2>
+  <div id="recommendList">
+    <div class="recommendation-card">"Excellent developer and problem solver."</div>
+  </div>
+
+  <div class="recommend-form">
+    <h3>Add Recommendation</h3>
+    <input type="text" id="recName" placeholder="Your Name">
+    <textarea id="recMessage" placeholder="Write recommendation..."></textarea>
+    <button onclick="addRecommendation()">Add Recommendation</button>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact Me</h2>
+  <form onsubmit="return submitForm()">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>© 2026 Linuel Leogan | Portfolio Website</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
